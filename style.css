@@ -21,6 +21,7 @@ body {
     background: rgba(255,255,255, 0.25);
     z-index: 10;
     backdrop-filter: blur(6px);
+    font-family: 'Poppins';
 }
 
 .logo{
@@ -29,11 +30,15 @@ body {
 }
 
 .brand-title{
-    font-size: 27px;
+    font-size: 40px;
 }
 
 .brand-title span{
     color: white;
+}
+
+.nav-icons img{
+  padding-left: 10px;
 }
 
 .navMenu a {
@@ -52,8 +57,8 @@ body {
 }
 
 .navMenu .dot {
-  width: 6px;
-  height: 6px;
+  width: 55px;
+  height: 55px;
   background: #fddb3a;
   border-radius: 50%;
   opacity: 0;
@@ -62,6 +67,7 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 
 .navMenu a:nth-child(1):hover ~ .dot {
   -webkit-transform: translateX(30px);
@@ -96,7 +102,7 @@ body {
 }
 
 #home{
-    background-image: url("assets/agriculture.png");
+    background-image: url("assets/agriculture-1807581_1920.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -110,10 +116,33 @@ body {
   padding-right: 10%;
   /* left: 10%; */
   color: black;
-  font-size:40px;
+  font-size:45px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-family: 'Press Start 2P';
+}
+.home-container span{
+  color: #3E4F97;
+}
+
+.download{
+  transition: all .5s ease;
+    color: #000000;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: "Poppins";
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 25px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+}
+.download:hover {
+  color: #001F3F;
+  background-color: #fff;
 }
 
 #services{
@@ -244,8 +273,6 @@ body {
     right: 0;
     bottom: 0;
 }
-
-
 
 
 .text-blk {
