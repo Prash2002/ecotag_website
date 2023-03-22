@@ -22,14 +22,15 @@
         <a href="#team">Team</a>
         <a href="#contact">Contact</a>
         <div class="nav-icons">
-            <img src="/assets/discord.png">
-            <img src="/assets/facebook.png">
-            <img src="/assets/linkedin.png">
+            <img src="assets/discord.png">
+            <img src="assets/facebook.png">
+            <img src="assets/linkedin.png">
         </div>
         <!-- <div class="dot">
             
         </div> -->
     </nav>
+    <section id="a" class="section">
     <div id="home">
         <div class="home-container">
             <span>Sustainable choices</span><br />
@@ -38,6 +39,8 @@
         </div>
         <!-- TODO: Download button -->
     </div>
+    </section>
+    <section id="b" class="section">
     <div id="services">
         <div class="ser-container">
             <div class="serleft">
@@ -45,10 +48,10 @@
                     Multiple Platforms, <br />
                     One Application
                     <div class="more-icons">
-                        <img src="/assets/play-store.png" alt="">
-                        <img src="/assets/www.png" alt="">
-                        <img src="/assets/app-store-ios.png" alt="">
-                        <img src="/assets/windows.png" alt="">
+                        <img src="assets/play-store.png" alt="">
+                        <img src="assets/www.png" alt="">
+                        <img src="assets/app-store-ios.png" alt="">
+                        <img src="assets/windows.png" alt="">
                     </div>
                 </div>
                 <!-- ADD LOGOS -->
@@ -76,6 +79,8 @@
             </div>
         </div>
     </div>
+    </section>
+    <section id="c" class="section">
     <div id="team">
         <div class="responsive-container-block outer-container">
             <div class="responsive-container-block inner-container">
@@ -87,11 +92,11 @@
                         Driven, motivated and trying to change the world
                     </p>
                 </div>
-                <div class="responsive-cell-block wk-desk-8 wk-ipadp-8 wk-tab-12 wk-mobile-12 team-members-container">
+                <div class="responsive-cell-block wk-desk-8 wk-ipadp-8 wk-tab-12 wk-mobile-12 team-members-container" align="center">
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                         <div class="card">
                             <a href="https://www.linkedin.com/in/jayantsogikar/">
-                                <img class="card-img" src="/assets/jayant.jpg">
+                                <img class="card-img" src="assets/jayant.jpg">
                             </a>
                             <p class="text-blk name">
                                 Jayant Sogikar
@@ -104,7 +109,7 @@
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                         <div class="card">
                             <a href="https://www.linkedin.com/in/nandanherekar/" target="_blank">
-                                <img class="card-img" src="/assets/nandan.jpg">
+                                <img class="card-img" src="assets/nandan.jpg">
                             </a>
                            
                             <p class="text-blk name">
@@ -118,7 +123,7 @@
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                         <div class="card">
                             <a href="https://www.linkedin.com/in/prash2002/" target="_blank">
-                                <img class="card-img" src="/assets/prasanthi.jpg">
+                                <img class="card-img" src="assets/prasanthi.jpg">
                             </a>
                             <p class="text-blk name">
                                 Gandham Prasanthi
@@ -128,10 +133,12 @@
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-8 wk-ipadp-8 wk-tab-12 wk-mobile-12 team-members-container" align="center">
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                         <div class="card">
                             <a href="https://www.linkedin.com/in/iram-sarwari-99b4491a0/" target="_blank">
-                                <img class="card-img" src="/assets/iram.jpg">
+                                <img class="card-img" src="assets/iram.jpg">
                             </a>
                             <p class="text-blk name">
                                 Iram Sarwari
@@ -144,7 +151,7 @@
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-mobile-12 wk-tab-12 card-container">
                         <div class="card">
                             <a href="https://www.linkedin.com/in/aditya-nayak-6532b9218/" target="_blank">
-                                <img class="card-img" src="/assets/aditya.jpg">
+                                <img class="card-img" src="assets/aditya.jpg">
                             </a>
                             <p class="text-blk name">
                                 Aditya Nayak
@@ -158,6 +165,8 @@
             </div>
         </div>
     </div>
+    </section>
+    <section id="d" class="section">
     <div id="contact">
         <div class="conleft">
             <div class="conhead">Get in touch</div>
@@ -184,6 +193,29 @@
             <img src="assets/plant.png" alt="">
         </div>
     </div>
+    </section>
+    <script>
+        const sections = document.querySelectorAll(".section");
+        let currentSectionIndex = 0;
+
+        function scrollToNextSection() {
+            if (currentSectionIndex === sections.length - 1) return;
+            console.log("Hi");
+            console.log(currentSectionIndex);
+            currentSectionIndex++;
+            sections[currentSectionIndex].scrollIntoView({
+                behavior: "inline"
+            });
+        }
+
+        window.addEventListener("wheel", event => {
+            const deltaY = event.deltaY;
+
+            if (deltaY > 0) {
+                scrollToNextSection();
+            }
+        });
+    </script>
 </body>
 
 </html>
