@@ -158,13 +158,13 @@ body {
 
 .ser-head{
     padding: 30px;
-    font-size: 55px;
+    font-size: 4vw;
     font-family: 'Poppins';
 }
 
 .more-icons img{
-  height: 48px;
-  width: 48px;
+  height: 5vh;
+  width: 5vh;
 }
 
 .ser-container{
@@ -178,16 +178,19 @@ body {
 
 .mobs{
     position: absolute;
+    height: 60%;
     left: 0;
     bottom: 0;
+    display: table-cell;
+    vertical-align: bottom;
 }
 
 .mob1{
-    height: 70vh;
+    height: 100%;
 }
 
 .mob2{
-    height: 60vh;
+    height: 70%;
 }
 
 .serright{
@@ -203,11 +206,14 @@ body {
 }
 
 .serpt h3{
-  font-size: 45px;
+  font-size: 4vw;
+  text-align: right;
 }
 
 .serpt p{
-  font-size: 26px;
+  font-size: 2vw;
+  text-align: right;
+  font-weight: 100;
 }
 
 #team{
