@@ -41,7 +41,8 @@ body {
     color: white;
 }
 
-.nav-icons{
+.nav-icons img{
+  height: 5vh;
 }
 
 .nav-icons img{
