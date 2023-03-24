@@ -9,6 +9,7 @@
     <title>Ecotag</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins|Press+Start+2P' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins:100' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:600' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -194,6 +195,9 @@
                 <div class="app-form-group buttons">
                     <button class="app-form-button">Submit</button>
                 </div>
+                <div class="final-msg">
+                    <p>Site is in development.<br>For details, contact jayant@mail.ecotag.dev</p>
+                </div>
             </div>
         </div>
         <div class="conright">
@@ -201,28 +205,6 @@
         </div>
     </div>
     </section>
-    <script>
-        const sections = document.querySelectorAll(".section");
-        let currentSectionIndex = 0;
-
-        function scrollToNextSection() {
-            if (currentSectionIndex === sections.length - 1) return;
-            console.log("Hi");
-            console.log(currentSectionIndex);
-            currentSectionIndex++;
-            sections[currentSectionIndex].scrollIntoView({
-                "behavior" : "smooth"
-            });
-        }
-
-        window.addEventListener("wheel", event => {
-            const deltaY = event.deltaY;
-
-            if (deltaY > 0) {
-                scrollToNextSection();
-            }
-        });
-    </script>
 </body>
 
 </html>
