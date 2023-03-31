@@ -15,7 +15,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
-
+<script>
+    function downloadFile() {
+      // Replace "/assets/file.pdf" with the file path of the file you want to download
+      const fileUrl = "assets/ecotag.apk";
+      
+      // Create an anchor element with the download attribute set to the file name
+      const a = document.createElement("a");
+      a.setAttribute("download", fileUrl.split("/").pop());
+      
+      // Set the anchor element's href attribute to the file URL
+      a.setAttribute("href", fileUrl);
+      
+      // Append the anchor element to the body and click it to trigger the download
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+</script>
 <body>
     <nav class="navMenu">
         <div class="logo">
@@ -40,7 +57,7 @@
             <div class="home-container">
                 <span>Sustainable choices</span><br />
                 Sustainable tomorrow<br>
-                <button class="download" download="/assets/ecotag.apk">Download</button>
+                <button class="download" onclick="downloadFile()">Download</button>
             </div>
             <!-- TODO: Download button -->
         </div>
